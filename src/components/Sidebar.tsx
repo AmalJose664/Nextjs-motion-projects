@@ -124,7 +124,7 @@ const Sidebar = () => {
 							<li>
 								<label className="inline-flex items-center mt-2">
 									<input type="radio" name="rating" value={1} className="form-radio"/>
-									<span className="ml-2">5 Star</span>
+									<span className="ml-2">5 Star change</span>
 								</label>
 							</li>
 						</ul>
