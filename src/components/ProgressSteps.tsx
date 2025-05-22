@@ -63,10 +63,10 @@ const ProgressSteps = () => {
 				<h2 className="text-xl font-bold">{steps[currentStep].title}</h2>
 				<p className="mt-2">{steps[currentStep].description}</p>
 			</motion.div>
-			<div className="flex mt-5 space-x-4">
+			<div className="flex gap-9  mt-5 space-x-4">
 				<button
 					onClick={prevStep}
-					className={`px-4 py-2 text-white bg-blue-500 rounded ${currentStep === 0 ? "opacity-50 cursor-not-allowed" : ""
+					className={`px-4 py-2 text-white unset-prev bg-blue-500 rounded ${currentStep === 0 ? "opacity-50 cursor-not-allowed" : ""
 						}`}
 					disabled={currentStep === 0}
 				>
@@ -74,9 +74,9 @@ const ProgressSteps = () => {
 				</button>
 				<button
 					onClick={nextStep}
-					className={`px-4 py-2 text-white bg-blue-500 rounded ${currentStep === steps.length - 1
-							? "opacity-50 cursor-not-allowed"
-							: ""
+					className={`px-4 py-2 text-white unset-prev bg-blue-500 rounded ${currentStep === steps.length - 1
+						? "opacity-50 cursor-not-allowed"
+						: ""
 						}`}
 					disabled={currentStep === steps.length - 1}
 				>
